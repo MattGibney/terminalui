@@ -41,7 +41,7 @@ function paddText(text, width, justify = 'start', padFill = ' ') {
     if(textLength(text) % 2) {
       rightPadding = rightPadding - 1;
     }
-    return `${padFill.repeat(padding)} ${text} ${padFill.repeat(rightPadding)}`;
+    return `${padFill.repeat(padding)}${text}${padFill.repeat(rightPadding)}`;
   }
 
   let padding = width - textLength(text);
