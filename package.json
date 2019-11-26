@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/Moppler/terminalui.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "license": "ISC",
   "dependencies": {
     "chalk": "^3.0.0",
