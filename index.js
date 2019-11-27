@@ -57,7 +57,12 @@ function render(tpl, data) {
     const config = tpl.config[key];
     const providedData = data[key] || '';
 
-    processedData[key] = paddText(providedData, config.width, config.justify);
+    processedData[key] = paddText(
+      providedData,
+      config.width,
+      config.justify,
+      config.paddingChar
+    );
   });
 
   return compile(processedData);
